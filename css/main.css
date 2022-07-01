@@ -1,0 +1,151 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+.head {
+  position: absolute;
+
+  width: 100%;
+  height: 113px;
+  left: 0px;
+  top: 2px;
+
+  background: #271515;
+
+}
+
+
+
+.head li{
+  display: inline-block;
+
+  width: 99px;
+  height: 37px;
+  left: 62px;
+  top: 16px;
+
+
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+
+  color: #E3DEDE;
+}
+
+.head li .logo{
+
+
+  font-family: Baumans;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  font-family: Baumans;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  font-family: Inter;
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.search{
+
+  width: 400px;
+  height: 45px;
+  left: 940px;
+  top: 40px;
+
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+.popular{
+  position: absolute;
+  width: 100%;
+  height: 620px;
+  left: 0px;
+  top: 115px;
+
+  background: #6A5E5E;
+}
+
+.popular-content{
+  display: inline-block;
+  width: 154px;
+  height: 32.01px;
+  left: 66px;
+  top: 137.01px;
+  margin-left: 66px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #EEEEEE;
+}
+
+.new_menu{
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  left: 0px;
+  top: 735px;
+
+  background: #271515;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.new_content {
+  position: absolute;
+  width: 100%;
+  height: 883px;
+  left: 0px;
+  top: 875px;
+
+  background: #271515;
+}
+
+.navigation_bottom_bar {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 1758px;
+
+  background: #271515;
+}
+
+.footer{
+
+  position: absolute;
+  width: 100%;
+  height: 142px;
+  left: 0px;
+  top: 1838px;
+
+  background: #271515;
+}
+
