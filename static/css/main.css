@@ -11,100 +11,89 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-.head {
-  position: absolute;
-
+.head-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 3fr 1fr 0.5fr;
   width: 100%;
-  height: 113px;
-  left: 0px;
-  top: 2px;
+  height: 115px;
 
-  background: #271515;
+  background: #0A1627;
+}
+
+.head_item {
 
 }
 
+.logo img{
+  width: 252px;
+  height: 61px;
+  margin-left: 33px;
+  margin-top:26px;
+
+}
+
+.genres_button {
+  margin-top: 38px;
+  width: 108px;
+  height: 36px;
 
 
-.head li{
-  display: inline-block;
-
-  width: 99px;
-  height: 37px;
-  left: 62px;
-  top: 16px;
-
-
-  font-family: 'Patua One';
+  font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 30px;
-  line-height: 37px;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
+  line-height: 36px;
 
   color: #E3DEDE;
 }
 
-.head li .logo{
+.main_button {
+  margin-top: 38px;
+  width: 108px;
+  height: 36px;
 
 
-  font-family: Baumans;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-
-  font-family: Baumans;
-  font-size: 41px;
-  font-weight: 400;
-  line-height: 48px;
-  letter-spacing: 0em;
-  text-align: left;
-
-  font-family: Inter;
-  font-size: 41px;
-  font-weight: 800;
-  line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
-
-}
-.search{
-
-  width: 400px;
-  height: 45px;
-  left: 940px;
-  top: 40px;
-
-  background: #D9D9D9;
-  border-radius: 10px;
-}
-.popular{
-  position: absolute;
-  width: 100%;
-  height: 620px;
-  left: 0px;
-  top: 115px;
-
-  background: #6A5E5E;
-}
-
-.popular-content{
-  display: inline-block;
-  width: 154px;
-  height: 32.01px;
-  left: 66px;
-  top: 137.01px;
-  margin-left: 66px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 30px;
+  line-height: 36px;
 
-  color: #EEEEEE;
+  color: #E3DEDE;
+}
+
+.search_button form {
+  margin-top: 26px;
+}
+
+.search_button form input {
+  text-align: left;
+  width: 400px;
+  height: 45px;
+
+  background: #E3DEDE;
+  border-radius: 10px;
+}
+
+.account_pic img{
+  margin-top: 26px;
+}
+.popular{
+
+}
+
+.popular-container{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 3fr 1fr 0.5fr;
+  width: 100%;
+  height: 620px;
+
+
+  background: #0A1627;
+}
+
+.popular-item {
+  border: 2px solid white;
 }
 
 .new_menu{
@@ -114,8 +103,8 @@
   left: 0px;
   top: 735px;
 
-  background: #271515;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url("../static/img/grad-main-page.png");
+  transform: rotate(-180deg);
 }
 
 .new_content {
