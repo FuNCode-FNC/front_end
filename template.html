@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FuNCode Cinema</title>
+    <link href="static/css/template.css" rel="stylesheet" type="text/css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand header">
+    <div class="container">
+        <div class="navbar-wrapper">
+            <a class="navbar-brand" href="template.html">
+                <img src="static/img/template/logo.png" width="250px" height="60px">
+            </a>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link">Films</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Serials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Anime</a>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item">
+                <form class="search">
+                    <label class="search">
+                        <input type="search" placeholder="Search...">
+                        <img src="static/img/template/search-interface-symbol.png" class="icon" width="30px"
+                             height="30px"
+                             title="Search">
+                    </label>
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="static/img/template/notify.png" height="30px" width="30px">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="static/img/template/account.png" height="30px" width="30px">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<main class="content" id="content">
+    <!--  write  content here-->
+    <script>
+        let self = document.getElementById("content");
+        for (let i = 0; i < 1000; ++i) {
+            self.appendChild(document.createTextNode("content "));
+        }
+    </script>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <a class="" href="template.html">
+                    <img src="static/img/template/logo.png" width="250px" height="60px">
+                </a>
+            </div>
+            <div class="col-4">
+                <p>
+                    FuNCode cinema’ player is working with Torrent files, so you can enjoy films in the best resolution.
+                    Made for cinema lovers by cinema lovers.
+                </p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3">
+                <h4>To copyright holders</h4>
+                <p>@ FuNCode<br>created by <a href="#" class="team">FuNCode</a> team</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html> 
