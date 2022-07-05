@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;display=swap" rel="stylesheet">
+	<title>Change</title>
+	<style type="text/css">
+		html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+		}
+	@media {
+        .em-mobile {
+          display: table-row !important;
+        }
+        .em-desktop {
+          display: none !important;
+        }
+      }
+        button:hover {
+            box-shadow: 2px 6px 10px 0px #9D5DDD;
+        }
+      </style>
+</head>
+<body style="margin: 0; padding: 0;">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size: 1px; line-height: normal;">
+		<tr em="group">
+			<td align="center" bgcolor="#E3DEDE">
+				<table cellpadding="0" cellspacing="0" width="100%" border="0" style="max-width: 820px; min-width: 320px; width: 100%;">
+					<!-- Text -->
+                    <tr em="block">
+                        <td align="center">
+                            <table align="center" cellpadding="" cellspacing="0" border="0" width="100%" style="max-width: 820px;">
+                                <tr>
+									<td align="left" style="background: linear-gradient(to right, #712ccb, #805fc2,  #b13062);">
+                                        <img src="/static/img/correct/email/black-logo.png" alt="" style="display: block; max-width: 200px; max-height: 52px; margin-top: 5%; margin-bottom: 5%; margin-left: 50px;">
+									</td>
+								</tr>
+                                <tr>
+									<td align="center" bgcolor="#0A1627">
+                                        <div style="font-family: Inter, sans-serif; font-weight: 500; font-size: 25px; line-height: 38px; color: #E3DEDE; margin-top: 25px; margin-bottom: 25px; margin-left: 50px; max-width: 720px; min-width: 200px">Hello, username!<br>To change your password, follow the link bellow: <a href="#" style="color: #ae8cda;">below:</a></div>
+									</td>
+								</tr>
+                                <tr>
+                                    <td align="center" bgcolor="#0A1627">
+                                        <button type="button" style="display: block; max-width: 400px; min-width: 150px; left: 210px; top: 295px; background:#AE8CDA; border-radius: 45px; border: none; margin-bottom: 25px; cursor: pointer;"> 
+                                            <a href="#" style="padding: 10px; font-family: Inter, sans-serif; font-weight: 800; font-size: 25px; line-height: 36px; text-decoration: none; color:#0A1627; max-width: 349px;">Go to FUNCODE cinema!</a> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" bgcolor="#0A1627">
+                                        <hr style="border: none; margin: 20px 0; padding: 0; height: 5px; width: 95%; background:
+                                        linear-gradient(to right, #b13062, #AE8CDA, #6d2bf0); ">
+                                    </td>
+                                </tr>
+                                <tr>
+									<td align="left" bgcolor="#0A1627">
+                                        <div style="font-family: Inter, sans-serif; font-weight:500; font-size: 25px; line-height: 38px; color: #E3DEDE; margin-top: 25px; margin-bottom: 25px; margin-left: 50px; max-width: 720px;  min-width: 200px">Why did you recieve this letter?<br><br>We have sent this email to help you change your password for your FUNCODE cinema account. <br><br>If you have not tried to change your password, don't worry! Someone may have entered your email address by mistake. In this case, just ignore this message.<br><br>Enjoy the show!<br><br>FUNCODE cinema team</div>
+									</td>
+								</tr>
+                            </table>
+                        </td>
+                    </tr>
+					<!-- The end of text -->
+				</table>
+			</td>
+		</tr>
+	</table>
+<!-- The end of a letter -->
+</body>
+</html>
