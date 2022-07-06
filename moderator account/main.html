@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FuNCode Cinema</title>
+        <link href="static/css/header_footer.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+    <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand header">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/img/logo.png" width="250px" height="60px">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item films">
+                        <a class="nav-link header-link">Films</a>
+                        <div class="genres" id="films">
+                            <div class="row">
+                                <div class="col-3 object" id="films_action">Action</div>
+                                <div class="col-3 object" id="films_adventure">Adventure</div>
+                                <div class="col-3 object" id="films_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_biography">Biography</div>
+                                <div class="col-3 object" id="films_comedy">Comedy</div>
+                                <div class="col-3 object" id="films_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_documentary">Documentary</div>
+                                <div class="col-3 object" id="films_drama">Drama</div>
+                                <div class="col-3 object" id="films_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="films_history">History</div>
+                                <div class="col-3 object" id="films_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_kids">Kids</div>
+                                <div class="col-3 object" id="films_music">Music</div>
+                                <div class="col-3 object" id="films_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_reality">Reality</div>
+                                <div class="col-3 object" id="films_romance">Romance</div>
+                                <div class="col-3 object" id="films_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_thriller">Thriller</div>
+                                <div class="col-3 object" id="films_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="films_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item serials">
+                        <a class="nav-link header-link">Serials</a>
+                        <div class="genres" id="serials">
+                            <div class="row">
+                                <div class="col-3 object" id="serials_action">Action</div>
+                                <div class="col-3 object" id="serials_adventure">Adventure</div>
+                                <div class="col-3 object" id="serials_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_biography">Biography</div>
+                                <div class="col-3 object" id="serials_comedy">Comedy</div>
+                                <div class="col-3 object" id="serials_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_documentary">Documentary</div>
+                                <div class="col-3 object" id="serials_drama">Drama</div>
+                                <div class="col-3 object" id="serials_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="serials_history">History</div>
+                                <div class="col-3 object" id="serials_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_kids">Kids</div>
+                                <div class="col-3 object" id="serials_music">Music</div>
+                                <div class="col-3 object" id="serials_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_reality">Reality</div>
+                                <div class="col-3 object" id="serials_romance">Romance</div>
+                                <div class="col-3 object" id="serials_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_thriller">Thriller</div>
+                                <div class="col-3 object" id="serials_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="serials_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item anime">
+                        <a class="nav-link header-link">Anime</a>
+                        <div class="genres" id="anime">
+                            <div class="row">
+                                <div class="col-3 object" id="anime_action">Action</div>
+                                <div class="col-3 object" id="anime_adventure">Adventure</div>
+                                <div class="col-3 object" id="anime_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_biography">Biography</div>
+                                <div class="col-3 object" id="anime_comedy">Comedy</div>
+                                <div class="col-3 object" id="anime_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_documentary">Documentary</div>
+                                <div class="col-3 object" id="anime_drama">Drama</div>
+                                <div class="col-3 object" id="anime_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="anime_history">History</div>
+                                <div class="col-3 object" id="anime_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_kids">Kids</div>
+                                <div class="col-3 object" id="anime_music">Music</div>
+                                <div class="col-3 object" id="anime_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_reality">Reality</div>
+                                <div class="col-3 object" id="anime_romance">Romance</div>
+                                <div class="col-3 object" id="anime_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_thriller">Thriller</div>
+                                <div class="col-3 object" id="anime_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="anime_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <form class="search">
+                            <label class="search">
+                                <input type="search" placeholder="Search...">
+                                <img src="static/img/search.png" class="icon" width="30px" 
+                                  height="30px" 
+                                  title="Search">
+                            </label>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/notify.png" height="30px" width="30px">
+                        </a>
+                    </li>
+                    <li class="nav-item account">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/account.png" height="30px" width="30px">
+                        </a>
+                        <div class="account_menu">
+                            <div class="row"><a href=#>Your profile</a></div>
+                            <div class="row"><a href=#>Add film</a></div>
+                            <div class="row"><a href=#>Add series</a></div>
+                            <div class="row"><a href=#>Change film's properties</a></div>
+                            <div class="row"><a href=#>Delete film</a></div>
+                            <div class="row exit">
+                                <div class="col-5"><a href=#>Sign out</a></div>
+                                <div class="col"><img src="static/img/exit.svg" height="17" width="18"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="photo_profil">
+                <img src="static/img/account.png" width="250" height="250" title="Your photo">
+                <h2>User name</h2>
+                <h3>User e-mail</h3>
+                <p>change profile picture</p>
+            </div>
+            <div class="films_profil">
+                <h1><a href="#">To-watch</a></h1>
+                <div class="to_watch"></div>
+                <h1><a href="#">Favourites</a></h1>
+                <div class="favourites"></div>
+                <h1><a href="#">Watched</a></h1>
+                <div class="watched"></div>
+            </div>
+            <div class="settings">
+                <h1>Settings</h1>
+                <div class="name_block account_details">
+                    <h2>Account details</h2>
+                    <div class="row settings_row" id="e-mail">
+                        <div class="col-3 title">E-mail</div>
+                        <div class="col text">User's e-mail</div>
+                    </div>
+                    <div class="row settings_row" id="password">
+                        <div class="col-3 title">Password</div>
+                        <div class="col-6 text">User's password</div>
+                        <div class="col button">change password</div>
+                    </div>
+                </div>
+                <div class="name_block account_managment">
+                    <h2>Account managment</h2>
+                    <div class="row settings_row" id="sign_out">
+                        <div class="col button_title">Sign out</div>
+                    </div>
+                </div>
+            </div>
+            <div class="delete_block">
+                <div class="row delete_row">
+                    <div class="col-3">
+                        <div class= "delete_button">Delete account</div>
+                    </div>
+                    <div class="col delete_text">
+                        When you delete an account, all data will be deleted, <br>
+                        including account profiles, browsing history <br>
+                        and favourites for each profile
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="" href="#">
+                            <img src="static/img/logo.png" width="250px" height="60px">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            FuNCode cinema’ player is working with Torrent files, so you can enjoy films in the best resolution.
+                            Made for cinema lovers by cinema lovers.
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <h4>To copyright holders</h4>
+                        <p>@ FuNCode<br>created by <a href="#" class="team">FuNCode</a> team</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="static/js/script.js"></script>
+    </body>
+</html> 
