@@ -16,14 +16,17 @@ main{
 }
 
 main .link{
+    margin-left: 60px;
     font-size: 20px;
     color: #E3DEDE;
     cursor: default;
+    margin-bottom: 0px;
 }
 main .link:hover{
     color: #FE0039;
 }
 main .genres{
+    margin-top: 0px;
     position:fixed;
     right: 720px;
     background-image: url(../img/grad-main-page.png);
