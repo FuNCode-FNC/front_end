@@ -1,0 +1,148 @@
+main{
+    background-color: #0A1627;
+}
+/*Окно профиля*/
+.photo_profil{
+    background-image: url(../img/grad-main-page.png);
+    width: 100%; height: 511px;
+}
+.photo_profil img{
+    margin: 71px auto 44px 595px; 
+}
+.photo_profil h2{
+    color: #e3dede;
+    margin: 0px auto 22px 646px;
+    font-size: 30px;
+}
+.photo_profil h3{
+    color: #e3dede;
+    margin: 0px auto auto 655px;
+    font-size: 24px;
+}
+.photo_profil p{
+    color: #0A1627;
+    background-color: rgba(217, 217, 217, 0.5);
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 221px; height: 32px;
+    margin:auto 29px 18px auto;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/*Фильмы*/
+.films_profil{
+    width: 1324px;
+    margin: 20px 58px;
+}
+.films_profil h1{
+    margin: 10px auto 20px 63px;
+    height: 45px;
+}
+.films_profil a{
+    text-decoration: none;
+    color:#FE0039;
+}
+.films_profil a:hover{
+    color:#e3dede;
+}
+.films_profil div{
+    display: flex;
+}
+.film_object{
+    width: 300px;
+    margin: 20px 30px;
+}
+.film_object img{
+    margin-left: 10px;
+    width: 228px; height: 330px;
+    padding-bottom: 20px; margin-bottom: 10px;
+    background: url(../data/anime.jfif), rgba(10, 22, 39, 1);
+    background-blend-mode: color;
+}
+.film_object .film_title{
+    color: #e3dede;
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.film_object .film_link{
+    text-decoration: none;
+}
+.film_object .film_genres{
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #808080;
+    font-size: 20px;
+}
+.films_profil div .arrow{
+    position: relative;
+    top: 170px;
+    cursor: pointer;
+    width: 45px; height: 45px;
+}
+
+.settings{
+    margin: 20px 58px;
+}
+.settings h1{
+    color:#FE0039;
+    margin: 10px auto 20px 63px;
+    height: 45px;
+}
+.settings .name_block{
+    color:#e3dede;
+    font-size: 25px;
+}
+.settings .title{
+    color: #962926;
+    font-size: 20px;
+}
+.settings .text{
+    font-size: 20px;
+    color:#0A1627;
+}
+.settings .button{
+    font-size: 20px;
+    color:#0A1627;
+    cursor: pointer;
+    text-align: center;
+}
+.settings_row{
+    width: 100%;
+    margin: 10px 0px;
+    background-color: #e3dede;
+    border-radius: 5px;
+}
+.account_managment{
+    margin-top: 40px;
+}
+.settings .button_title{
+    color:#962926;
+    font-size: 25px;
+    cursor: pointer;
+}
+.delete_block{
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    background-color: #962926;
+}
+.delete_button{
+    text-align: center;
+    margin: 10px auto 20px 45px;
+    height: 50px; width: 330px;
+    color:#962926;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #e3dede;
+    border-radius: 5px;
+}
+.delete_text{
+    margin-top: 30px;
+    margin-left: 160px;
+    color:#0A1627;
+    font-size: 25px;
+    line-height: 25px;
+}
