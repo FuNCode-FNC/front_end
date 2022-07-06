@@ -158,10 +158,21 @@
                             <img src="static/img/notify.png" height="30px" width="30px">
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item account">
                         <a class="nav-link" href="#">
                             <img src="static/img/account.png" height="30px" width="30px">
                         </a>
+                        <div class="account_menu">
+                            <div class="row"><a href=#>Your profile</a></div>
+                            <div class="row"><a href=#>Add film</a></div>
+                            <div class="row"><a href=#>Add series</a></div>
+                            <div class="row"><a href=#>Change film's properties</a></div>
+                            <div class="row"><a href=#>Delete film</a></div>
+                            <div class="row exit">
+                                <div class="col-5"><a href=#>Sign out</a></div>
+                                <div class="col"><img src="static/img/exit.svg" height="17" width="18"></div>
+                            </div>
+                        </div>
                     </li>
 
                 </ul>
@@ -169,9 +180,53 @@
         </nav>
 
         <main>
-            <h1><strong>Film</strong> &lt;genres&gt;</h1>
-            <div class="content" id="content"></div>
-            <div class="get_more">Load more</div>
+            <div class="photo_profil">
+                <img src="static/img/account.png" width="250" height="250" title="Your photo">
+                <h2>User name</h2>
+                <h3>User e-mail</h3>
+                <p>change profile picture</p>
+            </div>
+            <div class="films_profil">
+                <h1><a href="#">To-watch</a></h1>
+                <div class="to_watch"></div>
+                <h1><a href="#">Favourites</a></h1>
+                <div class="favourites"></div>
+                <h1><a href="#">Watched</a></h1>
+                <div class="watched"></div>
+            </div>
+            <div class="settings">
+                <h1>Settings</h1>
+                <div class="name_block account_details">
+                    <h2>Account details</h2>
+                    <div class="row settings_row" id="e-mail">
+                        <div class="col-3 title">E-mail</div>
+                        <div class="col text">User's e-mail</div>
+                    </div>
+                    <div class="row settings_row" id="password">
+                        <div class="col-3 title">Password</div>
+                        <div class="col-6 text">User's password</div>
+                        <div class="col button">change password</div>
+                    </div>
+                </div>
+                <div class="name_block account_managment">
+                    <h2>Account managment</h2>
+                    <div class="row settings_row" id="sign_out">
+                        <div class="col button_title">Sign out</div>
+                    </div>
+                </div>
+            </div>
+            <div class="delete_block">
+                <div class="row delete_row">
+                    <div class="col-3">
+                        <div class= "delete_button">Delete account</div>
+                    </div>
+                    <div class="col delete_text">
+                        When you delete an account, all data will be deleted, <br>
+                        including account profiles, browsing history <br>
+                        and favourites for each profile
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
