@@ -6,7 +6,6 @@ main{
 .page_title img{
     margin-top: 10px;
     margin-left: 40px;
-    transform: rotate(180deg);
 }
 .page_title h1{
     color:#FE0039;

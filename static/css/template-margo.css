@@ -16,6 +16,9 @@
     order: 0;
     flex-grow: 0;
 }
+.header-block:hover{
+    background-image: url(../img/grad-main-page.png);
+}
 .header .header-link{
     color: #E3DEDE;
     cursor: default;
