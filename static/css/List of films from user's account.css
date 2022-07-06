@@ -26,7 +26,7 @@ main .link:hover{
 main .genres{
     position:fixed;
     right: 720px;
-    background-image: url(../img/background.png);
+    background-image: url(../img/grad-main-page.png);
     display: none;
     width: 790px;
     padding-left: 50px;

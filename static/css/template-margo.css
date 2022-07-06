@@ -23,13 +23,35 @@
 .header .header-link:hover{
     color: #FE0039;
 }
+.account_menu{
+    position: fixed;
+    background-color: #E3DEDE;
+    width: 230px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    right: 30px;
+    display: none;
+}
+.account_menu a{
+    color: #0A1627;
+    text-decoration: none;
+    font-size: 20px;
+}
+.account_menu a:hover{
+    color:#FE0039;
+}
+.account:hover .account_menu{
+    display: block;
+}
 
 .genres{
     position:fixed;
     right: 350px;
-    background-image: url(../img/background.png);
+    background-image: url(../img/grad-main-page.png);
     display: none;
     width: 790px;
+    margin-top: 10px;
     padding-left: 50px;
     color:#0A1627;
     border-radius: 10px;
