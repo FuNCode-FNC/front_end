@@ -21,7 +21,7 @@ header .row div {
     margin-top: 27px;
     margin-right: 0;
     margin-left: 0;
-    background-image: url("../../main_page/static/img/logo.png");
+    background-image: url("../../static/img/logo.png");
     background-repeat: no-repeat;
     background-size: 250px 60px;
 }
@@ -61,7 +61,7 @@ header .row div {
 
     border-radius: 10px;
 
-    background-image: url("../../main_page/static/img/search.png");
+    background-image: url("../../static/img/correct/search-vector.svg");
     background-size: 30px 30px;
     background-repeat: no-repeat; /*Убираем повтор изображения*/
     background-position: 352px; /*Позиционируем*/
@@ -78,7 +78,7 @@ header .row div {
 
     margin-left: 25px;
     margin-top: 40px;
-    background-image: url("../../main_page/static/img/ring.png");
+    background-image: url("../../static/img/correct/message.svg");
     background-repeat: no-repeat;
     background-size: 39px 45px;
 }
@@ -89,7 +89,7 @@ header .row div {
 
     margin-left: 20px;
     margin-top: 40px;
-    background-image: url("../../main_page/static/img/account.png");
+    background-image: url("../../static/img/correct/profile-vector.svg");
     background-repeat: no-repeat;
     background-size: 45px 45px;
 }
@@ -113,7 +113,7 @@ body .title {
 
     font-size: 30px;
     font-weight: 800;
-    background-image: url("../../main_page/static/img/grad-main-page.png");
+    background-image: url("../../static/img/correct/main page/grad-divider.png");
     background-size: 100px;
     color: transparent;
     -webkit-background-clip: text;
@@ -208,7 +208,7 @@ body .description .col-2{
     margin-left: 0;
     height: 140px;
     width: 100%;
-    background-image: url("../../main_page/static/img/grad-main-page.png");
+    background-image: url("../../static/img/correct/main page/grad-divider.png");
     background-size: 100%; /* Современные браузеры */
     margin-bottom: 70px;
 }
