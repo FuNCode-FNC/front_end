@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FuNCode Cinema</title>
+        <link href="static/css/template.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body bgcolor="#0A1627">
+        <nav class="navbar navbar-expand header">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/img/logo.png" width="250px" height="60px">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item films">
+                        <a class="nav-link header-link">Films</a>
+                        <div class="genres" id="films">
+                            <div class="row">
+                                <div class="col-3 object" id="films_action">Action</div>
+                                <div class="col-3 object" id="films_adventure">Adventure</div>
+                                <div class="col-3 object" id="films_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_biography">Biography</div>
+                                <div class="col-3 object" id="films_comedy">Comedy</div>
+                                <div class="col-3 object" id="films_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_documentary">Documentary</div>
+                                <div class="col-3 object" id="films_drama">Drama</div>
+                                <div class="col-3 object" id="films_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="films_history">History</div>
+                                <div class="col-3 object" id="films_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_kids">Kids</div>
+                                <div class="col-3 object" id="films_music">Music</div>
+                                <div class="col-3 object" id="films_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_reality">Reality</div>
+                                <div class="col-3 object" id="films_romance">Romance</div>
+                                <div class="col-3 object" id="films_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="films_thriller">Thriller</div>
+                                <div class="col-3 object" id="films_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="films_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item serials">
+                        <a class="nav-link header-link">Serials</a>
+                        <div class="genres" id="serials">
+                            <div class="row">
+                                <div class="col-3 object" id="serials_action">Action</div>
+                                <div class="col-3 object" id="serials_adventure">Adventure</div>
+                                <div class="col-3 object" id="serials_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_biography">Biography</div>
+                                <div class="col-3 object" id="serials_comedy">Comedy</div>
+                                <div class="col-3 object" id="serials_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_documentary">Documentary</div>
+                                <div class="col-3 object" id="serials_drama">Drama</div>
+                                <div class="col-3 object" id="serials_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="serials_history">History</div>
+                                <div class="col-3 object" id="serials_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_kids">Kids</div>
+                                <div class="col-3 object" id="serials_music">Music</div>
+                                <div class="col-3 object" id="serials_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_reality">Reality</div>
+                                <div class="col-3 object" id="serials_romance">Romance</div>
+                                <div class="col-3 object" id="serials_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="serials_thriller">Thriller</div>
+                                <div class="col-3 object" id="serials_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="serials_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item anime">
+                        <a class="nav-link header-link">Anime</a>
+                        <div class="genres" id="anime">
+                            <div class="row">
+                                <div class="col-3 object" id="anime_action">Action</div>
+                                <div class="col-3 object" id="anime_adventure">Adventure</div>
+                                <div class="col-3 object" id="anime_animation">Animation</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_biography">Biography</div>
+                                <div class="col-3 object" id="anime_comedy">Comedy</div>
+                                <div class="col-3 object" id="anime_crime">Crime</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_documentary">Documentary</div>
+                                <div class="col-3 object" id="anime_drama">Drama</div>
+                                <div class="col-3 object" id="anime_family">Family</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_fantasy">Fantasy</div>
+                                <div class="col-3 object" id="anime_history">History</div>
+                                <div class="col-3 object" id="anime_horror">Horror</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_kids">Kids</div>
+                                <div class="col-3 object" id="anime_music">Music</div>
+                                <div class="col-3 object" id="anime_mystery">Mystery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_reality">Reality</div>
+                                <div class="col-3 object" id="anime_romance">Romance</div>
+                                <div class="col-3 object" id="anime_science_fiction">Science fiction</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 object" id="anime_thriller">Thriller</div>
+                                <div class="col-3 object" id="anime_tv_movie">TV Movie</div>
+                                <div class="col-3 object" id="anime_war">War</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <form class="search">
+                            <label class="search">
+                                <input type="search" placeholder="Search...">
+                                <img src="static/img/search.png" class="icon" width="30px" 
+                                  height="30px" 
+                                  title="Search">
+                            </label>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/notify.png" height="30px" width="30px">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/account.png" height="30px" width="30px">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content main bluebar" id="content">
+            <div class="container bluebar">
+                <div class="row">
+                    <div class="p-4"></div>
+                    <div class="col-1">
+                        <div class="position-relative">
+                            <div class="position-absolute top-0 start-50 translate-middle-x"><img src="static/img/bookmark.svg" width="45px" height="60px"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p class="title">Yes Man</p>
+                    </div>
+                </div>
+                <div class="row gx-1">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <img src="static/img/film.png" width="304" height="430">
+                    </div>
+                    <div class="col-3">
+                        <ul class="filmdescriptioin">
+                            <li><p class="whitetext">genre</p></li>
+                            <li><p class="greytext">Comedy, Romance</p></li>
+                            <li><p class="whitetext">duration</p></li>
+                            <li><p class="greytext">1h 44m</p></li>
+                            <li><p class="whitetext">director</p></li>
+                            <li><p class="greytext">Peyton Reed</p></li>
+                            <li><p class="whitetext">release</p></li>
+                            <li><p class="greytext">2008</p></li>
+                            <li><p class="whitetext">country</p></li>
+                            <li><p class="greytext">USA, The Great Britain</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <p class="description">Carl Allen is at a standstill. No future - until the day he enrolls into a personal development program based on a very simple idea: say yes to everything. Carl discovers with amazement the magical power of "Yes", and sees his professional and romantic life turned upside down overnight: an unexpected promotion and a new girlfriend. But he'll soon discover that better can be good's enemy, and that not all opportunities should be taken.</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="container bluebar">
+                <div class="row">
+                    <div class="p-5"></div>
+                    <div class="p-2"></div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div id="hero">
+                            <div id="output">
+                                <div id="progressBar"></div>
+                            <!-- The video player will be added here -->
+                            </div>
+                          <!-- Statistics -->
+                            <div id="status">
+                                <div>
+                                    <span class="show-leech">Downloading </span>
+                                    <span class="show-seed">Seeding </span>
+                                    <code>
+                                        <!-- Informative link to the torrent file -->
+                                        <a id="torrentLink" href="https://webtorrent.io/torrents/sintel.torrent">sintel.torrent</a>
+                                    </code>
+                                    <span class="show-leech"> from </span>
+                                    <span class="show-seed"> to </span>
+                                    <code id="numPeers">0 peers</code>.
+                                </div>
+                                <div>
+                                    <code id="downloaded"></code>
+                                    of <code id="total"></code>
+                                    — <span id="remaining"></span><br/>
+                                    &#x2198;<code id="downloadSpeed">0 b/s</code>
+                                    / &#x2197;<code id="uploadSpeed">0 b/s</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <img src="static/img/report.svg">
+                        <div class="p-2"></div>
+                        <img src="static/img/share.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="p-5"></div>
+                <div class="row">
+                    <div class="col-12 youmaylike">
+                        <p class="youmayliketitle">You may like</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container bluebar">
+                <div class="row gx-7">
+                    <div class="p-4"></div>
+                    <div class="col-1"></div>                    
+                    <div class="col-2">
+                        <img src="static/img/picture.png">
+                        <p class="thefilmtitle">The film title</p>
+                        <p class="thefilmgenres">film genres, film...</p>                        
+                    </div>
+                    <div class="col-2">
+                        <img src="static/img/picture1.png">
+                        <p class="thefilmtitle">The film title</p>
+                        <p class="thefilmgenres">film genres, film...</p>                        
+                    </div>
+                    <div class="col-2">
+                        <img src="static/img/picture2.png">
+                        <p class="thefilmtitle">The film title</p>
+                        <p class="thefilmgenres">film genres, film...</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="static/img/picture3.png">
+                        <p class="thefilmtitle">The film title</p>
+                        <p class="thefilmgenres">film genres, film...</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="static/img/picture4.png">
+                        <p class="thefilmtitle">The film title</p>
+                        <p class="thefilmgenres">film genres, film...</p>
+                    </div>
+                    <div class="col-1">
+                        <img src="static/img/next.svg" class="next">
+                    </div>
+                </div>    
+            </div>
+            <div class="container">
+                <div class="p-3"></div>
+                <div class="row">
+                    <div class="col-12 communityreviews">
+                        <p class="youmayliketitle">Community reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container bluebar">
+                <div class="row">
+                    <div class="p-4"></div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <p class="yourusername"><img src="static/img/accountlogo.png" class="accountlogo">Your username</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="static/img/rate-yellow.svg" class="star1">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-yellow.svg" class="star">
+                        <img src="static/img/rate-empty.svg" class="star">
+                        <img src="static/img/rate-empty.svg" class="star">
+                        <img src="static/img/rate-empty.svg" class="star">
+                    </div>
+                    <div class="col-1 rate">
+                        <p>7/10</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="p-2"></div>
+                    <div class="col-1"></div>
+                    <div class="col-4">
+                        <p class="enterreviewmessage">Enter review message</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-11">
+                        <img src="static/img/line1.png" class="line ">
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="p-4"></div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <p class="yourusername"><img src="static/img/account.png" class="accountlogo">Username</p>
+                    </div>
+                    <div class="col-5"></div>
+                    <div class="col-2">
+                        <p class="rate" align="center"><img src="static/img/rate-yellow.svg" class="userstar">2/10</p>
+                    </div>
+                    <div class="col-1">
+                        <img src="static/img/report.svg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <p class="reviewmessage">Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="container bluebar">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="" href="template.html">
+                            <img src="static/img/logo.png" width="250px" height="60px">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            FuNCode cinema’ player is working with Torrent files, so you can enjoy films in the best resolution.
+                            Made for cinema lovers by cinema lovers.
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <h4>To copyright holders</h4>
+                        <p>@ FuNCode<br>created by <a href="#" class="team">FuNCode</a> team</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="scripts/player.js"></script>
+        <!-- Include the latest version of WebTorrent -->
+        <script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+
+        <!-- Moment is used to show a human-readable remaining time -->
+        <script src="http://momentjs.com/downloads/moment.min.js"></script>
+
+        <script>
+            const torrentId = 'https://webtorrent.io/torrents/sintel.torrent'
+
+            const client = new WebTorrent()
+
+            // HTML elements
+            const $body = document.body
+            const $progressBar = document.querySelector('#progressBar')
+            const $numPeers = document.querySelector('#numPeers')
+            const $downloaded = document.querySelector('#downloaded')
+            const $total = document.querySelector('#total')
+            const $remaining = document.querySelector('#remaining')
+            const $uploadSpeed = document.querySelector('#uploadSpeed')
+            const $downloadSpeed = document.querySelector('#downloadSpeed')
+
+            // Download the torrent
+            client.add(torrentId, function (torrent) {
+
+                // Torrents can contain many files. Let's use the .mp4 file
+                const file = torrent.files.find(function (file) {
+                  return file.name.endsWith('.mp4')
+                })
+
+                // Stream the file in the browser
+                file.appendTo('#output')
+
+                // Trigger statistics refresh
+                torrent.on('done', onDone)
+                setInterval(onProgress, 500)
+                onProgress()
+
+                // Statistics
+                function onProgress () {
+                    // Peers
+                    $numPeers.innerHTML = torrent.numPeers + (torrent.numPeers === 1 ? ' peer' : ' peers')
+
+                    // Progress
+                    const percent = Math.round(torrent.progress * 100 * 100) / 100
+                    $progressBar.style.width = percent + '%'
+                    $downloaded.innerHTML = prettyBytes(torrent.downloaded)
+                    $total.innerHTML = prettyBytes(torrent.length)
+
+                    // Remaining time
+                    let remaining
+                    if (torrent.done) {
+                        remaining = 'Done.'
+                    } else {
+                        remaining = moment.duration(torrent.timeRemaining / 1000, 'seconds').humanize()
+                        remaining = remaining[0].toUpperCase() + remaining.substring(1) + ' remaining.'
+                    }
+                    $remaining.innerHTML = remaining
+
+                    // Speed rates
+                    $downloadSpeed.innerHTML = prettyBytes(torrent.downloadSpeed) + '/s'
+                    $uploadSpeed.innerHTML = prettyBytes(torrent.uploadSpeed) + '/s'
+                }
+                function onDone () {
+                    $body.className += ' is-seed'
+                    onProgress()
+                }
+            })
+
+            // Human readable bytes util
+            function prettyBytes(num) {
+                const units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+                const neg = num < 0
+                if (neg) num = -num
+                if (num < 1) return (neg ? '-' : '') + num + ' B'
+                const exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1)
+                const unit = units[exponent]
+                num = Number((num / Math.pow(1000, exponent)).toFixed(2))
+                return (neg ? '-' : '') + num + ' ' + unit
+            }
+        </script>
+    </body>
+</html> 
