@@ -21,7 +21,7 @@ header .row div {
     margin-top: 27px;
     margin-right: 0;
     margin-left: 0;
-    background-image: url("../../main_page/static/img/logo.png");
+
     background-repeat: no-repeat;
     background-size: 250px 60px;
 }
@@ -61,7 +61,7 @@ header .row div {
 
     border-radius: 10px;
 
-    background-image: url("../../main_page/static/img/search.png");
+    background-image: url("../../static/img/correct/search-vector.svg");
     background-size: 30px 30px;
     background-repeat: no-repeat; /*Убираем повтор изображения*/
     background-position: 352px; /*Позиционируем*/
@@ -76,11 +76,9 @@ header .row div {
     width: 39px;
     height: 45px;
 
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 40px;
-    background-image: url("../../main_page/static/img/ring.png");
-    background-repeat: no-repeat;
-    background-size: 39px 45px;
+
 }
 
 .acc-img {
@@ -89,9 +87,7 @@ header .row div {
 
     margin-left: 20px;
     margin-top: 40px;
-    background-image: url("../../main_page/static/img/account.png");
-    background-repeat: no-repeat;
-    background-size: 45px 45px;
+
 }
 
 body {
@@ -113,7 +109,7 @@ body .title {
 
     font-size: 30px;
     font-weight: 800;
-    background-image: url("../../main_page/static/img/grad-main-page.png");
+    background-image: url("../../static/img/correct/main page/grad-divider.png");
     background-size: 100px;
     color: transparent;
     -webkit-background-clip: text;
@@ -126,28 +122,16 @@ body .posters .col-2{
 }
 
 .poster-1 {
-    margin-left: 58px;
-    background-image: url("../../media/films/poster_1.jfif");
-    background-size: 228px 330px;
+    margin-left: 45px;
     margin-right: 70px;
 }
 
 .poster-2 {
-    background-image: url("../../media/films/poster_2.jfif");
-    background-size: 228px 330px;
     margin-right: 70px;
 }
 
 .poster-3 {
-    background-image: url("../../media/films/poster_3.jfif");
-    background-size: 228px 330px;
     margin-right: 70px;
-}
-
-.poster-4 {
-
-    background-image: url("../../media/films/poster_4.jfif");
-    background-size: 228px 330px;
 }
 
 .next-button {
@@ -155,9 +139,7 @@ body .posters .col-2{
     width: 45px;
     margin-left: 65px;
     align-self: center;
-
-    background-image: url("../../main_page/static/img/arrow_white.png");
-    background-repeat: no-repeat;
+    transform: rotate(-180deg);
 }
 
 body .name-1 {
@@ -208,7 +190,7 @@ body .description .col-2{
     margin-left: 0;
     height: 140px;
     width: 100%;
-    background-image: url("../../main_page/static/img/grad-main-page.png");
+    background-image: url("../../static/img/correct/main page/grad-divider.png");
     background-size: 100%; /* Современные браузеры */
     margin-bottom: 70px;
 }
@@ -262,11 +244,11 @@ body .description .col-2{
 }
 
 .content-poster-1 {
-    margin-left: 65px;
+    margin-left: 53px;
 }
 
 .content-poster-6 {
-    margin-left: 65px;
+    margin-left: 53px;
 }
 
 .new-content .con-poster {
