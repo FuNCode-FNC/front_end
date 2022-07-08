@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="main_page/static/css/bootstrap.css" rel="stylesheet">
-    <link href="main_page/static/css/main_page.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="static/css/main_page.css" rel="stylesheet">
 </head>
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-2 logo"></div>
+            <div class="col-2 logo"><img src="static/img/logo.png" height="60" width="250"></div>
             <div class="col-2 genres-button">Genres</div>
             <div class="col-3 pass"></div>
             <div class="col-3 search-button">
                 <form action="" method="get">
+
                     <input name="s" placeholder="" type="search">
                 </form>
             </div>
-            <div class="col-1 ring-img"></div>
-            <div class="col-1 acc-img"></div>
+            <div class="col-1 ring-img"><img src="static/img/template/notify.png" height="45" width="45"></div>
+            <div class="col-1 acc-img"><img src="static/img/template/account.png" height="45" width="45"></div>
         </div>
     </div>
 </header>
@@ -29,11 +31,11 @@
             <div class="col-12">Popular</div>
         </div>
         <div class="row posters">
-            <div class="col-2 poster-1">1</div>
-            <div class="col-2 poster-2">2</div>
-            <div class="col-2 poster-3">3</div>
-            <div class="col-2 poster-4">4</div>
-            <div class="col-1 next-button">5</div>
+            <div class="col-2 poster-1"><img src="media/films/poster-1.jpg" height="330" width="228"></div>
+            <div class="col-2 poster-2"><img src="media/films/poster-2.jpg" height="330" width="228"></div>
+            <div class="col-2 poster-3"><img src="media/films/poster-3.jpg" height="330" width="228"></div>
+            <div class="col-2 poster-4"><img src="media/films/poster-4.jpg" height="330" width="228"></div>
+            <div class="col-1 next-button"><img src="static/img/correct/back-vector.svg" height="45" width="45"></div>
         </div>
         <div class="row name-of-film">
             <div class="col-2 name-1">Titanic</div>
@@ -63,11 +65,11 @@
         </div>
 
         <div class="row new-content">
-            <div class="col-1 con-poster content-poster-1">1</div>
-            <div class="col-1 con-poster content-poster-2">2</div>
-            <div class="col-1 con-poster content-poster-3">3</div>
-            <div class="col-1 con-poster content-poster-4">4</div>
-            <div class="col-1 con-poster content-poster-5">5</div>
+            <div class="col-1 con-poster content-poster-1"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-2"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-3"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-4"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-5"><img src="media/films/poster.jpg" height="275" width="190"></div>
         </div>
         <div class="row new-content">
             <div class="col-1 content-film-name content-desc-1">Name</div>
@@ -84,11 +86,11 @@
             <div class="col-1 content-film-desc desc-5">Description</div>
         </div>
         <div class="row new-content">
-            <div class="col-1 con-poster content-poster-6">6</div>
-            <div class="col-1 con-poster content-poster-7">7</div>
-            <div class="col-1 con-poster content-poster-8">8</div>
-            <div class="col-1 con-poster content-poster-9">9</div>
-            <div class="col-1 con-poster content-poster-10">10</div>
+            <div class="col-1 con-poster content-poster-6"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-7"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-8"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-9"><img src="media/films/poster.jpg" height="275" width="190"></div>
+            <div class="col-1 con-poster content-poster-10"><img src="media/films/poster.jpg" height="275" width="190"></div>
         </div>
         <div class="row new-content">
             <div class="col-1 content-film-name content-desc-6">Name</div>
@@ -112,7 +114,7 @@
     <foot>
         <div class="container">
             <div class="row">
-                <div class="col-1 logo"></div>
+                <div class="col-1 logo"><img src="static/img/logo.png" height="60" width="250"></div>
                 <div class="col-1 text">FuNCode cinema’ player is working with Torrent files, so you can enjoy films in the best resolution. Made for cinema lovers by cinema lovers.</div>
                 <div class="col-1 copyright"><span class="underlined">To copyright holders</span><br><span class="other">@ FuNCode <br>created by <span class="red-color">FuNCode</span> team</span> </div>
             </div>
