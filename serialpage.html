@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Torrent Tutorial</title>
+    <meta charset="UTF-8" />
+    <script src="cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+  </head>
+  <body>
+    <video id="video-container" controls="true"></video>
+    <script>
+      const client = new WebTorrent();
+      const torrentId ="magnet:?xt=urn:btih:119F60C238FBA19862B74F01AF510ACCD99C2D33&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet&dn=%D0%95%D0%B2%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D0%B8%D0%BE%D0%BD%201.11%3A%20%D0%A2%D1%8B%20(%D0%BD%D0%B5)%20%D0%BE%D0%B4%D0%B8%D0%BD%20%2F%20Evangelion%20Shin%20Gekijouban%3A%20Jo%20%2F%20Evangelion%201.0%20You%20Are%20(Not)%20Alone%20%5BMovie%5D%20%5B%D0%91%D0%B5%D0%B7%20%D1%85%D0%B0%D1%80%D0%B4%D1%81%D0%B0%D0%B1%D0%B0%5D%20%5BRUS(int)%2C%20JAP%2BSub%5D%20%5B2007%2C%20";
+
+      client.add(torrentId, function (torrent) {
+        // Torrents can contain many files. Let's use the .mp4 file
+        const file = torrent.files.find(function (file) {
+          return file.name.endsWith(".mp4");
+        });
+
+        // Render to a <video> element by providing an ID. Alternatively, one can also provide a DOM element.
+        file.renderTo("#video-container", {}, () => {
+          console.log("Ready to play!");
+        });
+      });
+    </script>
+  </body>
+</html>

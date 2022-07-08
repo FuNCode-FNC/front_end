@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+html {
+    /*position: relative;*/
+}
+
+.header {
+    height: 80px;
+    background: #0A1627;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header .header-link{
+    color: #E3DEDE;
+    cursor: default;
+
+    font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+}
+
+.header .header-link:hover{
+    color: #FE0039;
+}
+
+.genres{
+    position:fixed;
+    right: 350px;
+    display: none;
+    width: 790px;
+    margin-top: 10px;
+    padding-left: 50px;
+    color:#0A1627;
+    border-radius: 10px;
+
+    background-image: url(../img/rectangle21.png);
+}
+
+.genres .object{
+    margin: 6.5px 20px;
+    background-color: rgba(217, 217, 217, 0.5);
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px; font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.genres .object:hover{
+    color:#FE0039;
+}
+
+.films:hover .genres{
+    display: block;
+}
+
+.serials:hover .genres{
+    display: block;
+}
+
+.anime:hover .genres{
+    display: block;
+}
+
+.search {
+    width: 400px;
+}
+
+.search, .search input {
+    border-radius: 5px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.search input {
+    width: 90%;
+}
+
+.icon {
+    background: none;
+}
+
+.bluebar {
+    background: #0A1627;	
+}
+
+.title {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 48px;
+
+	color: #E3DEDE;
+}
+
+.whitetext {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	text-decoration-line: underline;
+
+	color: #E3DEDE;
+}
+
+.greytext {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+
+	color: #808080;
+}
+
+.filmdescriptioin {
+	list-style-type: none;
+}
+
+.description {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 29px;
+	line-height: 35px;
+
+	color: #E3DEDE;
+}
+
+.seasonchoose {
+	background-image: url(../img/season-grad-choose1.png);
+}
+
+.seasonchoose ul li {
+	display: inline-block;
+}
+
+.season {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+
+	margin-top: 15px;
+}
+
+.seasonnumber {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+
+	margin-left: 65px;
+	margin-top: 15px;
+}
+
+.serieschoose {
+	background-image: url(../img/season-grad-choose2.png);
+}
+
+.serieschoose ul li {
+	display: inline-block;
+}
+
+.series {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+
+	margin-top: 15px;
+}
+
+.seriesnumber {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+
+	margin-left: 65px;
+	margin-top: 15px;
+}
+
+.report {
+	width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #0000cc;
+    border-radius: 10px;
+    color: #0000cc;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.youmaylike {
+	background-image: url(../img/mesh-gradient-youmaylike.png);
+}
+
+.youmayliketitle {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 48px;
+
+	color: #0A1627;
+
+	margin-top: 25px;
+	margin-left: 50px;
+
+}
+
+.thefilmtitle {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: #E3DEDE;
+
+	margin-top: 5px;
+}
+
+.thefilmgenres {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #808080;
+
+	margin-top: -12px;
+}
+
+.next {
+	position: relative;
+	top: 135px;
+}
+
+.communityreviews {
+	background-image: url(../img/сommunityreviews.png);
+}
+
+.accountlogo {
+	border-radius: 50%;
+
+	margin-right: 30px;
+}
+
+.yourusername {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: #E3DEDE;
+}
+
+.star1 {
+	margin-left: 53px;
+}
+
+.star {
+	margin-left: 8px;
+}
+
+.rate {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0.05em;
+
+	color: #E3DEDE;
+
+	position: relative;
+	top: 7px;
+}
+
+.enterreviewmessage {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: #E3DEDE;
+
+	margin-left: 75px;
+}
+
+.line {
+	margin-left: 75px;
+	margin-top: -40px;
+}
+
+.userstar {
+	margin-right: 15px;
+}
+
+.reviewmessage {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: #E3DEDE;
+
+	margin-left: 75px;
+}
+
+footer {
+    /* default footer */
+
+    background-color: #0A1627;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 0 10px;
+    gap: 10px;
+
+    height: 195px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #E3DEDE;
+}
+
+footer h4 {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration-line: underline;
+
+    color: #E3DEDE;
+
+}
+
+
+footer .team {
+    color: red;
+}
+
