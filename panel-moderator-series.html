@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+    <head>
+        <meta charset="utf-8">
+        <title>FuNCode Cinema</title>
+        <link href="static/css/template.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <style>
+    
+            * {
+                box-sizing: border-box;
+                background-color: #0A1627;
+            }
+        
+            #titleText, #titleLogo, .container {
+                background-color: transparent;
+            }
+
+            .titleBar {
+                background-image: url(/static/img/correct/ava_background.png);
+
+                font-family: Inter, sans-serif;
+                font-size: 25px;
+                font-weight: 800;
+            }
+
+            .titleBox {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 360px;
+                white-space: nowrap;
+                padding: 4%
+            }
+
+            .objectContainer { 
+                display: grid;
+                grid-template-columns: 0.9fr 0.8fr 1.3fr;
+                grid-template-rows: 0.2fr 1.9fr 0.1fr; 
+                gap: 10px 20px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "objectTitle . Icons"
+                    "objectCover objectFacts objectDescription"
+                    ". Submit .";
+
+                padding-left: 5%;
+                padding-right: 3%;
+                padding-bottom: 5%;
+                background-color: #0A1627;
+                }
+
+            .objectTitle { 
+                grid-area: objectTitle; 
+
+                max-width: 304px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .objectCover { 
+                grid-area: objectCover; 
+
+                aspect-ratio: 304/440;
+                min-height: 100px;
+                max-height: 390px;
+                padding-left: 5%;
+                background-color: #705A9D;
+            }
+
+            .objectFacts { 
+                grid-area: objectFacts; 
+                width: 200px;
+                height: 500px;
+                aspect-ratio: 272/506;
+                height: max-content;
+            }
+
+            .Icons {  
+                display: grid;
+                grid-template-columns: min-content min-content;
+                grid-template-rows: min-content;
+                gap: 0px 10px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "change cancel";
+                grid-area: Icons;
+
+                justify-content: end;
+            }
+
+            .Submit { 
+                grid-area: Submit; 
+            }
+
+            .change { 
+                grid-area: change; 
+                padding-top: 15px;
+            }
+
+            .cancel { 
+                grid-area: cancel;
+                padding-top: 15px;
+            }
+
+            .objectDescription { 
+                grid-area: objectDescription; 
+                max-width: 515px;
+                aspect-ratio: 515/450;
+            }
+
+            .chooseContainer {
+                display: grid;
+                grid-template-columns: 0.7fr 1.9fr 0.4fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: column;
+                justify-content: start;
+                justify-items: stretch;
+                align-items: center;
+                grid-template-areas:
+                    "Season chooseSeason next1"
+                    "Series chooseSeries next2";
+            }
+
+            .Season { 
+                grid-area: Season; 
+            }
+
+            .chooseSeason { 
+                grid-area: chooseSeason; 
+            }
+
+            .Series { 
+                grid-area: Series; 
+            }
+
+            .chooseSeries { 
+                grid-area: chooseSeries; 
+            }
+
+            .next1 { 
+                grid-area: next1; 
+            }
+
+            .next2 { 
+                grid-area: next2; 
+            }
+
+            .change-form {
+                background-color: transparent;
+                width: 100%;
+
+                max-height: 60px;
+                left: 0;
+            }
+        
+            form .control {
+                position: relative;
+                margin-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            form .control label {
+                position: absolute;
+                top: 30px;
+                left: 0;
+                transition: 0.3s ease;
+                /* text-transform: uppercase; */
+
+                font-family: Inter, sans-serif;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+        
+            form .control.submit {
+                text-align: right;
+            }
+        
+            form input, form textarea {
+                width: 100%;
+                border: none;
+                /* border-bottom: 1px solid #e3e3e3; */
+                outline: none;
+                padding: 10px 0;
+            }
+            
+            form .filled label, form input:focus + label, form textarea:focus + label {
+                top: 0;
+                font-size: 12px;
+            }
+
+            form textarea {
+                aspect-ratio: 511/450;
+            }
+            
+            form input[type=submit] {
+                width: auto;
+                background-color: #705A9D;
+                background-image: linear-gradient(45deg, #705A9D, #FE0039);
+;
+                padding: 10px 40px;
+                color: #E3DEDE;
+                border-radius: 10px;
+
+                cursor: pointer;
+
+                font-family: Inter, sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                text-decoration: none;
+                line-height: 36px;
+            }
+
+            form input[type=submit]:hover {
+                transition: all 150ms linear;
+                opacity: .85;
+            }
+
+        </style>
+
+        <title>Moderator panel</title>
+    </head>
+
+
+
+    
+    <body>
+        <!--Default header-->
+        <nav class="navbar navbar-expand header">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/img/correct/logo.png" width="250px" height="60px">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item films">
+                        <a class="nav-link header-link">Genres</a>
+                        
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <form class="search">
+                            <label class="search">
+                                <input type="search" placeholder="">
+                                <img src="static/img/correct/search-vector.svg" class="icon" width="30px" 
+                                  height="30px" 
+                                  title="Search">
+                            </label>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/correct/notification.svg" height="30px" width="30px">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="static/img/correct/profile-vector.svg" height="30px" width="30px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Title-->
+        <div class="titleBar">
+            <div class="titleBox container gap-3">
+                <div id="titleText" class="mx-auto" style="display: inline; white-space:nowrap; padding: 5%;"> 
+                    Add series to
+                </div>
+
+                <div id="titleLogo" style="display: inline">
+                    <img src="/static/img/correct/white-logo.png" style="background-color: transparent; width: 180px; height: 45px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="objectContainer">
+            <div class="objectTitle">
+                <div class="col change-form">
+                    <form>
+                        <div class="control">
+                            <input type="text"  id="objectTitle">
+                            <label for="objectTitle">The title</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="objectCover">
+                <div class="change-form">
+                    <form>
+                        <div class="control" style="background-color: #705A9D">
+                            <input type="text"  id="objectLinkCover" style="background-color: #705A9D">
+                            <label for="objectLinkCover" style="background-color: #705A9D">Link to the cover</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="objectFacts">
+                <div class="change-form">
+                    <form>
+                        <div class="control">
+                            <input type="text"  id="objectDirector">
+                            <label for="objectDirector">Director</label>
+                        </div>
+                        <div class="control">
+                            <input type="text"  id="objectGenres">
+                            <label for="objectGenres">Genres</label>
+                        </div>
+                        <div class="control">
+                            <input type="text"  id="objectCategory">
+                            <label for="objectCategory">Category</label>
+                        </div>
+                        <div class="control">
+                            <input type="text"  id="objectRelease">
+                            <label for="objectRelease">Year of release</label>
+                        </div>
+                        <div class="control">
+                            <input type="text"  id="objectCountry">
+                            <label for="objectCountry">Country</label>
+                        </div>
+                        <div class="control">
+                            <input type="text"  id="objectTorrent">
+                            <label for="objectTorrent">Link to the Torrent</label>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            
+            <div class="Icons">
+                <div class="change">
+                    <a href="#">
+                        <img src="/static/img/correct/moderator panel/change.svg" style="width: 35px;">
+                    </a>
+                </div>
+                <div class="cancel">
+                    <a href="#">
+                        <img src="/static/img/correct/moderator panel/cancel.svg" style="width: 35px;">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="objectDescription">
+                <div class="change-form">
+                    <form>
+                        <div class="control">
+                            <textarea name="" id="objectDescription"></textarea>
+                            <label for="objectDescription">Description</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="Submit change-form">
+                <form>
+                    <div class="control submit"><input type="submit" /></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="chooseContainer">
+            <div class="Season">
+
+            </div>
+            <div class="chooseSeason">
+
+            </div>
+            <div class="Series">
+
+            </div>
+            <div class="chooseSeries">
+
+            </div>
+            <div class="next1">
+                <
+            </div>
+            <div class="next2">
+
+            </div>
+          </div>
+
+        <!--Default footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="" href="template.html">
+                            <img src="static/img/template/logo.png" width="250px" height="60px">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            FuNCode cinema’ player is working with Torrent files, so you can enjoy films in the best resolution.
+                            Made for cinema lovers by cinema lovers.
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <h4>To copyright holders</h4>
+                        <p>@ FuNCode<br>created by <a href="#" class="team">FuNCode</a> team</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+        <script>
+        $("input,textarea").blur(function () {
+        if ($(this).val()) {
+          $(this).parent().addClass("filled");
+        } else {
+          $(this).parent().removeClass("filled");
+        }
+        });
+        </script>
+    </body>
+    
+
+</html>
